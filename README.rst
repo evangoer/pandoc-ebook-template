@@ -51,6 +51,12 @@ Makefile
 * Change ``CHAPTERS`` to a space separated list of Pandoc Markdown chapters, in
   the order in which you want them to appear.
 
+* (Optional) Change ``COVER_IMAGE``. You might want to move your cover image
+  elsewhere, or use a different file format such as PNG.
+
+  If you don't want a cover image, delete this variable and the
+  ``--epub-cover-image`` option in the EPUB target.
+
 * (Optional) Change ``LATEX_CLASS``. The default of ``report`` handles 
   multi-chapter books pretty well, and uses the same template for even and odd
   page numbers. However, you are free to substitute in any other LaTeX document
