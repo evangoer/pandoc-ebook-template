@@ -17,7 +17,7 @@ Installing and running
 1. If you have not already done so, install:
    
    * `git <http://git-scm.com/>`_
-   * `make <http://www.gnu.org/software/make/`_ (OS X users should install XCode
+   * `make <http://www.gnu.org/software/make/>`_ (OS X users should install XCode
      and `download the command line tools
      <http://stackoverflow.com/questions/9329243/xcode-4-4-command-line-tools>`_.)
    * `pandoc <http://johnmacfarlane.net/pandoc>`_
@@ -30,8 +30,8 @@ Installing and running
    This generates three versions of the sample book in a ``build/`` directory.
 
 
-Replacing the sample material with your own book
-------------------------------------------------
+Replacing the sample material
+-----------------------------
 
 Edit these files:
 
@@ -42,6 +42,11 @@ Replace the dummy text with your own. You can add, subtract, or rename these
 ``*.md`` chapters as you please, but you must edit the ``CHAPTERS`` variable in
 the ``Makefile`` accordingly. 
 
+images/cover.jpg
+````````````````
+
+Replace this with your own cover image or delete it entirely. 
+
 Makefile
 ````````
 
@@ -51,7 +56,7 @@ Makefile
 * Change ``CHAPTERS`` to a space separated list of Pandoc Markdown chapters, in
   the order in which you want them to appear.
 
-* (Optional) Change ``COVER_IMAGE``. You might want to move your cover image
+* Change ``COVER_IMAGE``. You might want to move your cover image
   elsewhere, or use a different file format such as PNG.
 
   If you don't want a cover image, delete this variable and the
@@ -69,8 +74,8 @@ title.txt
 
 Replace the contents of this file with the real manuscript title and author name.
 
-METADATA
-````````
+metadata.xml
+````````````
 
 Replace with your actual copyright statement, language, and any other Dublin
 Core metadata you wish to provide.
